@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="exchange">
+            <h2 class="exchange-title">Курс обміну <b>валют</b></h2>
+            <h3> на <i id="exchange-today">00/00/0000</i></h3>
+            <table style="display: flex;">
+                <tr>
+                    <th>
+                        <p>USD</p>
+                        <p>UAH</p>
+                    </th>
+                    <th>
+                        <p>EUR</p>
+                        <p>UAH</p>
+                    </th>
+                    <th>
+                        <p>RUR</p>
+                        <p>UAH</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="3">покупка</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="exchange-usd">00.00</p>
+                    </td>
+                    <td>
+                        <p id="exchange-eur">00.00</p>
+                    </td>
+                    <td>
+                        <p id="exchange-rur">00.00</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">продаж</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="exchange-sale-usd">00.00</p>
+                    </td>
+                    <td>
+                        <p id="exchange-sale-eur">00.00</p>
+                    </td>
+                    <td>
+                        <p id="exchange-sale-rur">00.00</p>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="test"></div>
+        <div class="container">
+            <div class="currency">
+                <select id="from_currency">
+                    <option value="EUR" selected>EUR</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD">USD</option>
+                </select>
+                <input type="number" id="from_ammount" placeholder="0" value=1 />
+            </div>
+            <div class="middle">
+                <button id="exchange">
+                    <i class="fas fa-exchange-alt">&#8661</i>
+                </button>
+                <div class="rate" id="rate"></div>
+            </div>
+            <div class="currency">
+                <select id="to_currency">
+                    <option value="EUR">EUR</option>
+                    <option value="UAH">UAH</option>
+                    <option value="USD" selected>USD</option>
+                </select>
+                <input type="number" id="to_ammount" placeholder="0" />
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+</body>
+
+</html>
